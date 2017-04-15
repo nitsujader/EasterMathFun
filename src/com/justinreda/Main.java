@@ -10,34 +10,37 @@ public class Main {
     private static String SOLVE_Y_STRING = "y = ?\n";
 
     private static String q1 = "Solve for x.\n6x - 3y = 5";
-    private static String a1 = "1/2*y+5/6";
+    private static String a1_terms_of_x = "1/2*y+5/6";
 
     public static void main(String[] args) {
-	    // write your code here
 
         boolean questionOneCorrect = false;
         do {
             questionOneCorrect = question1();
         } while (!questionOneCorrect);
 
-        //TODO ask more questions
+        //TODO ask question 2
+
+
+        //TODO ask q3-5
     }
 
     private static boolean question1() {
         //TODO print question
-        System.out.println(q1);
-        System.out.println(SOLVE_X_STRING);
+        q1
+        SOLVE_X_STRING
 
         //TODO get the next line of input from the console
-        Scanner scanner = new Scanner(System.in);
-        String input1 = scanner.nextLine();
+        String input1 = ;
 
         //TODO Check input1 and make it so spaces and capitals in answer dont matter
-        input1 = input1.replaceAll(" ", "").toLowerCase();
+        //hint replace spaces and make whole thing lowercase
+        input1 =
 
         //TODO Check if answer solving for x is correct
-        if (input1.equals(a1)) {
-            System.out.println(CORRECT_STRING);
+        if (a1_terms_of_x) {
+            //answer is correct
+            CORRECT_STRING
 
             //TODO now solve in terms of y
 
@@ -50,5 +53,9 @@ public class Main {
             System.out.println(TRY_AGAIN_STRING);
             return false;
         }
+    }
+
+    private static boolean question2() {
+        //TODO fill in q2
     }
 }
